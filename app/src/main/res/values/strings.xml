@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Student Manager</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_signup">Signup</string>
+
+
+    <string name="create_account"><font color="#00ff00">text</font></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+
+    <string-array name="main">
+        <item>Timetable</item>
+        <item>subjects</item>
+        <item>Faculty</item>
+        <item>Resources</item>
+
+
+    </string-array>
+
+    <string-array name="desc">
+        <item>Lets you know about your course timetable!</item>
+        <item>Lets you know about the subjects in your course.</item>
+        <item>Lets you know about the professors.</item>
+        <item>Lets you know about the study material and links.</item>
+    </string-array>
+
+
+    <string-array name="subjects">
+        <item>SPCC</item>
+        <item>MCC</item>
+        <item>DDB</item>
+        <item>SE</item>
+        <item>NPL</item>
+        <item>PM</item>
+
+    </string-array>
+
+    <string-array name="teacher">
+        <item>Ms. Snehal Mumbaikar</item>
+        <item> Mr. Vishwanath Chikareddi</item>
+        <item>Ms. Rohini Damhane</item>
+        <item>Dr. Bharti Joshi</item>
+        <item>Ms. Siddhi Patni</item>
+        <item>Ms. Payal Sancheti</item>
+
+    </string-array>
+
+    <string-array name="colors" translatable="false">
+        <item>#99cc00</item>
+        <item>#33b5e5</item>
+        <item>#0099cc</item>
+        <item>#547bca</item>
+        <item>#aa66cc</item>
+        <item>#9933cc</item>
+        <item>#669900</item>
+        <item>#aeb857</item>
+        <item>#cc0000</item>
+        <item>#df5948</item>
+        <item>#ff4444</item>
+        <item>#ae6b23</item>
+        <item>#ff8800</item>
+        <item>#e5ae4f</item>
+        <item>#ffbb33</item>
+        <item>#cccccc</item>
+        <item>#888888</item>
+    </string-array>
+
+</resources>

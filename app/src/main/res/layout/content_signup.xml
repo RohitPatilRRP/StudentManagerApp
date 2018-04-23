@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dell.studentmanager.Signup"
+    tools:showIn="@layout/activity_signup"
+    android:background="@drawable/ui">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:fontFamily="@font/dawning_of_a_new_day"
+        android:text="Student Manager"
+        android:textColor="#fff"
+        android:textSize="50dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="3dp"
+        android:id="@+id/scrollview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Just a few details to get you started"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="25dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Email"
+                android:background="@drawable/rounded_white"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:drawableStart="@drawable/ic_user_icon"
+                android:id="@+id/userEmail"
+                android:layout_marginBottom="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/userNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_call_black_24dp"
+                android:hint="Mobile Number"
+                android:inputType="number" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Password"
+                android:background="@drawable/rounded_white"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:drawableStart="@drawable/ic_pass_icon"
+                android:inputType="textPassword"
+                android:id="@+id/userPassword"
+                android:layout_marginBottom="10dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Confirm Password"
+                android:background="@drawable/rounded_white"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:drawableStart="@drawable/ic_pass_icon"
+                android:inputType="textPassword"
+                android:id="@+id/userCPassword"
+                android:layout_marginBottom="10dp"/>
+
+            <!--<RadioButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/radiobtn"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textStyle="italic"-->
+                <!--android:button="@drawable/radio_button"-->
+                <!--android:text="I agree to all the terms and conditons"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="10dp"/>-->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerbtn"
+                android:text="Register"
+                android:textColor="#fff"
+                android:background="@drawable/register_button"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scrollview"
+            android:layout_marginStart="70dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Already have an account?Login"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="17sp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/login"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/normalText"-->
+        <!--android:layout_toRightOf="@id/normalText"-->
+        <!--android:text="@string/login"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="17sp" />-->
+
+
+
+</RelativeLayout>

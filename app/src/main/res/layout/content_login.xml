@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dell.studentmanager.Login"
+    tools:showIn="@layout/activity_login"
+    android:background="@drawable/ui">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:fontFamily="@font/dawning_of_a_new_day"
+        android:text="Student Manager"
+        android:textColor="#fff"
+        android:textSize="50dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="30dp"
+        android:id="@+id/scrollview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/trans_white_rectangle"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:background="@drawable/rounded_white"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_call_black_24dp"
+            android:id="@+id/userLoginNumber"
+            android:layout_marginBottom="15dp"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:background="@drawable/rounded_white"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/ic_pass_icon"
+        android:inputType="textPassword"
+        android:id="@+id/userLoginPassword"
+        android:layout_marginBottom="15dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rememberMe"
+            android:layout_marginLeft="20dp"
+            android:text="Remember Me!!!"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginbtn"
+            android:text="Login"
+            android:textColor="#fff"
+            android:background="@drawable/register_button"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/gotosignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Don't have an Account?Create one!"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+</RelativeLayout>
